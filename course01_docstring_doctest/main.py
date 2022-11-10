@@ -47,6 +47,22 @@ def checkAlien3(colorSangre:str, sangreVenenosa:bool):
 
     return False
 
+def sayHello(name:str) -> str:
+    """ Bot qui dit bonjour
+
+    Args:
+        name (str): Nom de l utilisateur
+
+    Returns:
+        str: phrase de bienvenue
+
+    Examples:
+    
+    >>> sayHello('krys')
+    'Bonjour krys. Je suis autobot ton nouvel ami.'
+    """
+    return f'Bonjour {name}. Je suis autobot ton nouvel ami.'
+
 if __name__ == '__main__':
     print("point de depart")
     result =  checkAlien(colorSangre="VERDE", sangreVenenosa=True)
@@ -54,3 +70,4 @@ if __name__ == '__main__':
     print(checkAlien.__doc__)
     print(checkAlien.__name__)
     print(checkAlien)
+    print(sayHello('krys'))
