@@ -44,6 +44,7 @@ print('---  fin du traitement ----')
 
 
 # invoquer une exception
+"""
 num = -32
 try:
     if num <= 0:
@@ -58,3 +59,14 @@ except ValueError as e:
     with open('errors.log','a') as f:
         now = datetime.datetime.now()
         f.write('\n' + str(now) + ' - [02_exceptions -> main.py]' + str(e) + ' -> ' + str(type(e).__name__))
+"""        
+
+
+# Utilisation des assertions
+assert 7 == 7
+print('Si c est ok on continue')
+
+try:
+    assert 5 == 7, 'les valeurs sont differentes'
+except AssertionError as e:
+    print(str(e))
