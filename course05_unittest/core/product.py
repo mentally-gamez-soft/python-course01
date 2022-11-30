@@ -17,3 +17,6 @@ class Product():
         self.name = name
         self.price = price
         self.discount = discount
+
+    def code(self):
+        return "code-{}".format(self.name)

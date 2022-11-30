@@ -30,4 +30,7 @@ class TestProduct(unittest.TestCase):
         with self.assertRaises(ProductDiscountSuperiorToPriceException):
             Product(name="Iphone", price=100, discount=200)
 
+    def test_code(self):
+        self.assertRegex(self.mobile.code(), "^code")
+
     
