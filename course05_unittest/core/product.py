@@ -1,4 +1,7 @@
 
+
+class ProductDiscountSuperiorToPriceException(Exception):
+    pass
 class Product():
     """
     Class de produits.
@@ -6,6 +9,11 @@ class Product():
     - name: le nom du produit
     - price: le prix du produit
     """
-    def __init__(self, name, price):
+    def __init__(self, name, price, discount=0.0):
+        
+        if price < discount:
+            raise ProductDiscountSuperiorToPriceException("The discount cant be more than the price")
+
         self.name = name
         self.price = price
+        self.discount = discount

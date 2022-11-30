@@ -1,5 +1,5 @@
 import unittest
-from core.product import Product
+from core.product import Product, ProductDiscountSuperiorToPriceException
 
 class TestProduct(unittest.TestCase):
 
@@ -23,3 +23,11 @@ class TestProduct(unittest.TestCase):
 
     def test_product_price(self):
         self.assertEqual(self.mobile.price, self.price, 'The price of the product is different')
+
+    def test_discount_error(self):
+        """ Generate an exception when the discount is superior to the price of the item
+        """        
+        with self.assertRaises(ProductDiscountSuperiorToPriceException):
+            Product(name="Iphone", price=100, discount=200)
+
+    
