@@ -1,0 +1,6 @@
+1, "Learn pytest", True
+2, "Learn unittest", False
+3, "Booleen non specifie ca donne quoi ?", None
+-23, "id negatif ... hmmm curieux comportement...", True
+0, "je suis un id nul ca marche toujours ?", False
+14, "pas de booleen version 2", None
