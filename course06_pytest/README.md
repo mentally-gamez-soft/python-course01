@@ -21,3 +21,9 @@
 12) Implement tests with skip and skipif and execute:
     - pytest -v -s
 13) Parameters in tests
+14) How to export these tests ?
+15) Use of the library Excel reporting  (pip install pytest-excel)
+   - py.test --excelreport=test_reporting.xls --verbose
+16) Use of library HTML reporter (pip install pytest-html-reporter):
+   - pytest -v tests/ --html-report=reports/test_reporting.html --title="course testing"  
+17) others: Allure framework - https://docs.qameta.io/allure/

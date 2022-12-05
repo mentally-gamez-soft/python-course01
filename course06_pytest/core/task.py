@@ -1,6 +1,6 @@
 class Task():
 
-    def __init__(self, task_id:int, description:str, status:bool=False):
+    def __init__(self, task_id:int, description:str, status:bool=False, category=None):
         self.task_id = task_id
         self.description = description
         if status is None:

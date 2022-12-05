@@ -86,7 +86,8 @@ class TestTask():
 
     # read from files the parameters
     import csv
-    csv_filename = "./course06_pytest/list_of_tasks.csv"
+    # csv_filename = "./course06_pytest/list_of_tasks.csv"
+    csv_filename = "./list_of_tasks.csv"
     list_of_tasks = []
     
     with open(csv_filename) as f:
