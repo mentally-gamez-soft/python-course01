@@ -21,9 +21,28 @@
 12) Implement tests with skip and skipif and execute:
     - pytest -v -s
 13) Parameters in tests
+
+
+
+# Test Reporting
+
 14) How to export these tests ?
 15) Use of the library Excel reporting  (pip install pytest-excel)
    - py.test --excelreport=test_reporting.xls --verbose
 16) Use of library HTML reporter (pip install pytest-html-reporter):
    - pytest -v tests/ --html-report=reports/test_reporting.html --title="course testing"  
 17) others: Allure framework - https://docs.qameta.io/allure/
+
+
+
+# Coverage
+18) nstallation of library coverage to analyze the source code and its test covering
+19) Check the source code for task.py over coverage:
+   - coverage run -m pytest tests
+   - coverage run -m unittest discover -v
+20) Generate a file in the project directory named .coverage and we have to read it with the command:
+   - coverage report
+   - coverage report -m
+21) implement the method done and undone to the Task object and the coverage will diminish (no need to relaunch the run)
+22) Display the report in an html file:
+   - coverage html

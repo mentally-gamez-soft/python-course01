@@ -10,3 +10,9 @@ class Task():
     @classmethod
     def verification(cls):
         return True
+
+    def done(self):
+        self.status = True
+
+    def undone(self):
+        self.status = False
