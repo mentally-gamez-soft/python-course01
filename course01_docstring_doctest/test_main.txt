@@ -1,0 +1,4 @@
+# Ultimo paso, externalizar las pruebas a un fichero y ejecutar este fichero
+>>> from course01_docstring_doctest.main import checkAlien3
+>>> checkAlien3("negro", True)
+True
