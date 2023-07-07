@@ -41,3 +41,5 @@ print("sum:" + str(sum_notes))
 esta_lloviendo = True
 hace_frio = False
 print(hace_frio and esta_lloviendo)
+
+print("hello world")
